@@ -13,4 +13,5 @@ jobs:
       matrix:
         configuration: [debug, release]
     steps:
-      - run: echo "🔧 This job builds the configuration: ${{ matrix.configuration }}."
+      - run: echo " This job builds the configuration ${{ matrix.configuration }}."
+
