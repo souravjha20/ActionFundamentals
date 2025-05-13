@@ -8,16 +8,9 @@ on:
 
 jobs:
   build:
-    name: Build (${{ matrix.configuration }})
     runs-on: ubuntu-latest
-
     strategy:
       matrix:
         configuration: [debug, release]
-
     steps:
-      - name: Checkout source
-        uses: actions/checkout@v3
-
-      - name: Display configuration
-        run: echo "🔧 This job builds the configuration: ${{ matrix.configuration }}."
+    - run: echo "🔧 This job builds the configuration: ${{ matrix.configuration }}."
